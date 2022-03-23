@@ -27,6 +27,199 @@ a{
 
 /* {end} add file font */
 
+/* {start} add header style */
+
+.m-header{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(17, 167, 17, 0.7), rgba(0, 0, 0, 0.9)), 
+    url("../../images/nature.jpg");
+    object-fit: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* {end} add header style */
+/* {start} add nav header */
+
+.m-nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.m-nav .banner{
+    width: 70px;
+    height: 70px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    border: none;
+    background-color: #3F3C3D;
+    color: #fff;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, .9);
+}
+/* {end} about us */
+
+.m-nav .banner img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.m-nav .nav-header{
+    width: 100%;
+}
+
+.m-nav .nav-header ul{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.m-nav .nav-header ul li{
+    padding: 0 15px;
+}
+
+.m-nav .nav-header ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+}
+
+.m-nav .nav-header ul li a:hover{
+    color: rgb(112, 186, 230);
+}
+
+/* {end} add nav header */
+/* {start} add main title */
+
+.main-title{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 70px 0;
+}
+
+.main-title h1{
+    font-size: 50px;
+    color: #fff;
+    font-weight: 1000;
+}
+
+/* {end} add main title */
+/* {start} add places categories  */
+
+.main-categories{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    padding: 20px 0;
+}
+
+.main-categories .item-category{
+    margin: 0 30px;
+    display: flex;
+    align-items: center;
+    flex-direction:column;
+    cursor: pointer;
+}
+
+.main-categories .item-category .item-banner{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, .4);
+    overflow: hidden;
+}
+
+.main-categories .item-category .item-banner img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.main-categories .item-category p{
+    padding: 15px 0;
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+/* {end} add places categories  */
+/* {start} add fixed scroll bar */
+
+.scroll-bar{
+    position: fixed;
+    top: 50%;
+    left: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+}
+
+
+.scroll-bar .circle{
+    width: 11px;
+    height: 11px;
+    background-color: rgb(196, 191, 191);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    margin: 5px 0;
+    cursor: pointer;
+    transition: all 0.1s ease-in-out;
+    -webkit-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    -ms-transition: all 0.1s ease-in-out;
+    -o-transition: all 0.1s ease-in-out;
+}
+
+.scroll-bar .triangle{
+    width: 0; 
+    height: 0; 
+    margin: 5px 0;
+    cursor: pointer;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+}
+
+.scroll-bar .triangle:nth-child(1){
+    border-bottom: 17px solid rgb(196, 191, 191);
+}
+
+.scroll-bar .triangle:nth-child(6){
+    border-top: 17px solid rgb(196, 191, 191);
+}
+
+.scroll-bar .circle.active{
+    background-color: #fff;
+}
+
+.scroll-bar .circle:hover{
+    background-color: #fff;
+}
+
+/* {end} add fixed scroll bar */
 
 /* {start} about us */
 #aboutus{
@@ -264,15 +457,14 @@ a{
 }
 
 .aboutus .footer .btn{
+    font-size: 15px;
     padding: 5px 25px 5px 25px;
+    background-color: #3F3C3D;
+    color: #fff;
     border-radius: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
-    border: none;
-    background-color: #3F3C3D;
-    color: #fff;
-    box-shadow: 4px 4px 10px rgba(0, 0, 0, .9);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, .6);
 }
-/* {end} about us */
