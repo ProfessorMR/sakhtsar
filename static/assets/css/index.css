@@ -201,14 +201,143 @@ a{
 }
 
 .scroll-bar .circle.active{
-    background-color: #000;
+    background-color: #28ec16;
 }
 
 .scroll-bar .circle:hover{
-    background-color: #000;
+    background-color: #28ec16;
 }
 
 /* {end} add fixed scroll bar */
+/* {start} contact us */
+
+#contactus{
+    width: 100%;
+    height: 100vh;
+}
+
+.contactus{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.contactus .img{
+    position: relative;
+    width: 50%;
+    height: 500px;
+    margin-left: 30px;
+}
+
+
+.contactus .img img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.contactus .main{
+    width: 40%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contactus .main .header{
+    margin-bottom: 5px;
+    width: 50%;
+}
+
+.contactus .main .header h1{
+    font-size: 30px;
+    font-weight: 2000;
+}
+
+.contactus .main .text{
+    width: 45%;
+    margin-bottom: 5px;
+}
+
+.contactus .main .text p{
+    font-size: 14px;
+}
+
+.contactus .main .input{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+}
+
+.contactus .main .input form{
+    width: 100%;
+}
+
+.contactus .main .input input{
+    width: 100%;
+    margin: 10px 0;
+    padding: 5px 10px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    box-sizing: border-box;
+    color: #000;
+    font-size: 15px;
+    outline: none;
+    border: 1px solid #ccc;
+}
+
+.contactus .main .input input::placeholder{
+    color: #a0a0a0;
+}
+
+.contactus .main .input input:-ms-input-placeholder {
+    color: #a0a0a0;
+}
+
+.contactus .main .input input::-ms-input-placeholder {
+    color: #a0a0a0;
+}
+
+.contactus .main .input .btn{
+    padding: 5px 60px;
+    margin: 10px 0;
+    box-sizing: border-box;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    outline: none;
+    float: left;
+    border: none;
+    background-image: linear-gradient(to right,#ff9000,#ff6500);
+    opacity: 0.5;
+    transition: all .2s;
+    -webkit-transition: all .2s;
+    -moz-transition: all .2s;
+    -ms-transition: all .2s;
+    -o-transition: all .2s;
+}
+
+.contactus .main .input .btn.enable{
+    opacity: 1;
+    cursor: pointer;
+}
+
+
+.contactus .main .input .btn.enable:hover{
+    box-shadow: 1px 1px 10px #ff9000;
+}
+
+/* {end} contact us */
 /* {start} about us */
 
 #aboutus{
