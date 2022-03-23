@@ -26,7 +26,6 @@ a{
 }
 
 /* {end} add file font */
-
 /* {start} add header style */
 
 .m-header{
@@ -53,17 +52,7 @@ a{
 .m-nav .banner{
     width: 70px;
     height: 70px;
-    border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
-    border: none;
-    background-color: #3F3C3D;
-    color: #fff;
-    box-shadow: 4px 4px 10px rgba(0, 0, 0, .9);
 }
-/* {end} about us */
 
 .m-nav .banner img{
     width: 100%;
@@ -212,16 +201,16 @@ a{
 }
 
 .scroll-bar .circle.active{
-    background-color: #fff;
+    background-color: #000;
 }
 
 .scroll-bar .circle:hover{
-    background-color: #fff;
+    background-color: #000;
 }
 
 /* {end} add fixed scroll bar */
-
 /* {start} about us */
+
 #aboutus{
     width: 100%;
     height: 100vh;
@@ -468,3 +457,5 @@ a{
     -o-border-radius: 10px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, .6);
 }
+
+/* {end} about us */
