@@ -128,4 +128,34 @@ chooseFileSubmitContent.oninput = () =>{
 }
 
 //{end} Submit content
+//{start} scrollbar script
+const sections = document.querySelectorAll('section');
+const circle = document.querySelectorAll('.circle');
+let current;
 
+window.addEventListener('scroll',() => {
+    sections.forEach(section => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.clientHeight;
+        if(window.pageYOffset >= sectionTop - sectionHeight / 3){
+            current = section.getAttribute('id');
+        }
+    });
+
+    circle.forEach(item =>{
+        item.classList.remove('active');
+        if(item.classList.contains(current)){
+            item.classList.add('active');
+        }
+    })
+});
+
+circle.forEach(item => item.addEventListener('mouseover',() => {
+    item.classList.add('activePopUp');
+}));
+
+circle.forEach(item => item.addEventListener('mouseout',() => {
+    item.classList.remove('activePopUp');
+}));
+
+//{end} scrollbar script
