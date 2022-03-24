@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     font-family: VAZIR;
+    
 }
 
 body{
@@ -23,6 +24,16 @@ a{
     url('../../fonts/vazir-font/Vazir.woff2') format('woff2'), /* FF39+,Chrome36+, Opera24+*/
     url('../../fonts/vazir-font/Vazir.woff') format('woff'), /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
     url('../../fonts/vazir-font/Vazir.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'VAZIR-BOLD';
+    font-style: normal;
+    src: url('../../fonts/vazir-font/Vazir-Bold.eot');
+    src: url('../../fonts/vazir-font/Vazir-Bold.eot') format('embedded-opentype'), /* IE6-8 */
+    url('../../fonts/vazir-font/Vazir-Bold.woff2') format('woff2'), /* FF39+,Chrome36+, Opera24+*/
+    url('../../fonts/vazir-font/Vazir-Bold.woff') format('woff'), /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+    url('../../fonts/vazir-font/Vazir-Bold.ttf') format('truetype');
 }
 
 /* {end} add file font */
@@ -101,6 +112,7 @@ a{
     font-size: 50px;
     color: #fff;
     font-weight: 1000;
+    font-family: VAZIR-BOLD;
 }
 
 /* {end} add main title */
@@ -256,6 +268,7 @@ a{
 .contactus .main .header h1{
     font-size: 30px;
     font-weight: 2000;
+    font-family: VAZIR-BOLD;
 }
 
 .contactus .main .text{
@@ -362,6 +375,7 @@ a{
 .aboutus .header h1{
     font-size: 40px;
     font-weight: 2000;
+    font-family: VAZIR-BOLD;
 }
 
 .aboutus .main{
@@ -610,6 +624,7 @@ a{
 .main-title-sumbit-content h1{
     font-size: 40px;
     font-weight:1000;
+    font-family: VAZIR-BOLD;
 }
 
 .discreaption-submit-content{
