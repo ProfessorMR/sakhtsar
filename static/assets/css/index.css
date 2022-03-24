@@ -229,7 +229,7 @@ a{
 }
 
 .aboutus .header h1{
-    font-size: 30px;
+    font-size: 40px;
     font-weight: 2000;
 }
 
@@ -538,10 +538,6 @@ a{
     direction: rtl;
 }
 
-.form-sumbit-content form input:nth-child(4){
-    cursor: pointer;
-}
-
 .form-sumbit-content form input::placeholder { 
     color: #a0a0a0;
 }
@@ -620,6 +616,46 @@ a{
 .choose-categories-sumbit-content .showCategories ul li:hover{
     background-color: #6262ff;
     color: #fff;
+}
+
+.form-sumbit-content form .upload-submit-content{
+    height: 45px;
+    width: 320px;
+    position: relative;
+    margin: 10px 0;
+}
+
+.form-sumbit-content form .upload-submit-content.activeColorToUploader label{
+    color: #000;
+}
+
+.form-sumbit-content form .upload-submit-content input[type ='file']{
+    display: none;
+}
+
+.form-sumbit-content form .upload-submit-content label{
+    color: #a0a0a0;
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content:right;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    cursor: pointer;
+    padding: 0 10px;
+    box-sizing: border-box;
+    font-size: 15px;
 }
 
 .form-sumbit-content form button{
