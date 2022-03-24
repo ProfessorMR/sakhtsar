@@ -218,7 +218,7 @@ a{
 
 .contactus{
     width: 100%;
-    height: 100vh;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -227,7 +227,7 @@ a{
 
 .contactus .img{
     position: relative;
-    width: 50%;
+    width: 45%;
     height: 500px;
     margin-left: 30px;
 }
@@ -281,7 +281,8 @@ a{
 .contactus .main .input input{
     width: 100%;
     margin: 10px 0;
-    padding: 5px 10px;
+    padding: 10px;
+    box-sizing: border-box;
     border-radius: 20px;
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
@@ -307,7 +308,7 @@ a{
 }
 
 .contactus .main .input .btn{
-    padding: 5px 60px;
+    padding: 10px 60px;
     margin: 10px 0;
     box-sizing: border-box;
     border-radius: 20px;
@@ -356,6 +357,7 @@ a{
     align-items: center;
     justify-content: center; 
     padding: 60px 0 60px 0;
+    box-sizing: border-box;
 }
 
 .aboutus .header h1{
