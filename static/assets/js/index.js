@@ -150,6 +150,62 @@ window.addEventListener('scroll',() => {
     })
 });
 
+//{start} add nextSection and prevSection
+const nameOfSection = ["header","contactus","aboutus","submitcontent"];
+let currentSection;
+
+//{start} add nextSection
+const nextSection = () => {
+    window.addEventListener('scroll',() => {
+        sections.forEach(section => {
+            const sectionTop = section.offsetTop;
+            const sectionHeight = section.clientHeight;
+            if(window.pageYOffset >= sectionTop - sectionHeight / 3){
+                currentSection = section.getAttribute('id');
+            }
+        });   
+    });
+    if(currentSection == nameOfSection[0]){
+        window.location.href = `#${nameOfSection[1]}`
+    }
+    else if(currentSection == nameOfSection[1]){
+        window.location.href = `#${nameOfSection[2]}`;
+    }
+    else if(currentSection == nameOfSection[2]){
+        window.location.href = `#${nameOfSection[3]}`;
+    }
+    else if(currentSection == nameOfSection[3]){
+        window.location.href = `#${nameOfSection[0]}`;
+    }
+}
+//{end} add nextSection
+//{start} add prevSection
+const prevSection = () => {
+    window.addEventListener('scroll',() => {
+        sections.forEach(section => {
+            const sectionTop = section.offsetTop;
+            const sectionHeight = section.clientHeight;
+            if(window.pageYOffset >= sectionTop - sectionHeight / 3){
+                currentSection = section.getAttribute('id');
+            }
+        });   
+    });
+    if(currentSection == nameOfSection[0]){
+        window.location.href = `#${nameOfSection[3]}`
+    }
+    else if(currentSection == nameOfSection[1]){
+        window.location.href = `#${nameOfSection[0]}`;
+    }
+    else if(currentSection == nameOfSection[2]){
+        window.location.href = `#${nameOfSection[1]}`;
+    }
+    else if(currentSection == nameOfSection[3]){
+        window.location.href = `#${nameOfSection[2]}`;
+    }
+}
+//{end} add prevSection
+//{end} add nextSection and prevSection
+
 circle.forEach(item => item.addEventListener('mouseover',() => {
     item.classList.add('activePopUp');
 }));

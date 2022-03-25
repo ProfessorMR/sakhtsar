@@ -91,20 +91,28 @@
     <!-- {end} add main header -->
     <!-- {start} add fixed scroll bar  -->
     <div class="scroll-bar">
-        <div class="triangle"></div>
-        <div class="circle header active">
-            <span>صفحه اصلی</span>
-        </div>
-        <div class="circle contactus">
-            <span>تماس با ما</span>
-        </div>
-        <div class="circle aboutus">
-            <span>درباره ما</span>
-        </div>
-        <div class="circle submitcontent">
-            <span>ارسال محتوا</span>
-        </div>
-        <div class="triangle"></div>
+        <div class="triangle" onclick="prevSection()"></div>
+        <a href="#header">
+            <div class="circle header active">
+                <span>صفحه اصلی</span>
+            </div>
+        </a>
+        <a href="#contactus">
+            <div class="circle contactus">
+                <span>تماس با ما</span>
+            </div>
+        </a>
+        <a href="#aboutus">
+            <div class="circle aboutus">
+                <span>درباره ما</span>
+            </div>
+        </a>
+        <a href="#submitcontent">
+            <div class="circle submitcontent">
+                <span>ارسال محتوا</span>
+            </div>
+        </a>
+        <div class="triangle" onclick="nextSection()"></div>
     </div>
     <!-- {end} add fixed scroll bar  -->
     <main>
