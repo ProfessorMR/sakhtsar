@@ -152,7 +152,12 @@ window.addEventListener('scroll',() => {
 
 //{start} add nextSection and prevSection
 const nameOfSection = ["header","contactus","aboutus","submitcontent"];
-let currentSection;
+let currentSection = nameOfSection[0];
+window.onload = () => {
+    window.scrollTo(0, 0);
+    history.replaceState(null, null, ' ');
+}
+
 
 //{start} add nextSection
 const nextSection = () => {
@@ -215,3 +220,17 @@ circle.forEach(item => item.addEventListener('mouseout',() => {
 }));
 
 //{end} scrollbar script
+
+//{start} device height
+
+// const header = document.getElementById('header');
+// const contactus = document.getElementById('contactus');
+// const aboutus = document.getElementById('aboutus');
+// const submitcontent = document.getElementById('submitcontent');
+
+// header.style.height = `${window.screen.height}px`;
+// contactus.style.height = `${window.screen.height}px`;
+// aboutus.style.height = `${window.screen.height}px`;
+// submitcontent.style.height = `${window.screen.height - 100}px`;
+
+//{end} device height
