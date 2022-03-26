@@ -220,17 +220,3 @@ circle.forEach(item => item.addEventListener('mouseout',() => {
 }));
 
 //{end} scrollbar script
-
-//{start} device height
-
-// const header = document.getElementById('header');
-// const contactus = document.getElementById('contactus');
-// const aboutus = document.getElementById('aboutus');
-// const submitcontent = document.getElementById('submitcontent');
-
-// header.style.height = `${window.screen.height}px`;
-// contactus.style.height = `${window.screen.height}px`;
-// aboutus.style.height = `${window.screen.height}px`;
-// submitcontent.style.height = `${window.screen.height - 100}px`;
-
-//{end} device height
