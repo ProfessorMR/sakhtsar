@@ -152,12 +152,26 @@ window.addEventListener('scroll',() => {
 
 //{start} add nextSection and prevSection
 const nameOfSection = ["header","contactus","aboutus","submitcontent"];
-let currentSection = nameOfSection[0];
-window.onload = () => {
-    window.scrollTo(0, 0);
-    history.replaceState(null, null, ' ');
-}
+let currentSection = '';
+let hashIndex = window.location.hash;
 
+window.onload = () => {
+    if(hashIndex == ''){
+        currentSection = nameOfSection[0];
+    }
+    else if(hashIndex == `#${nameOfSection[0]}`){
+        currentSection = nameOfSection[0];
+    }
+    else if(hashIndex == `#${nameOfSection[1]}`){
+        currentSection = nameOfSection[1];
+    }
+    else if(hashIndex == `#${nameOfSection[2]}`){
+        currentSection = nameOfSection[2];
+    }
+    else if(hashIndex == `#${nameOfSection[3]}`){
+        currentSection = nameOfSection[3];
+    }
+}
 
 //{start} add nextSection
 const nextSection = () => {
