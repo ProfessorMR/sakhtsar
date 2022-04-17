@@ -40,13 +40,20 @@ a{
     url('../../fonts/vazir-font/Vazir-Bold.ttf') format('truetype');
 }
 
+@font-face {
+    font-family: 'COLAK';
+    font-style: normal;
+    src:url('../../fonts/colak-font/Colak.woff2') format('woff2'), /* FF39+,Chrome36+, Opera24+*/
+    url('../../fonts/colak-font/Colak.woff') format('woff'), /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+}
+
 /* {end} add file font */
 /* {start} add header style */
 
 
 #header{
     width: 100%;
-    height: auto;
+    height: calc(100vh - (100vh - 100%));
 }
 
 .m-header{
@@ -122,7 +129,7 @@ a{
     font-size: 50px;
     color: #fff;
     font-weight: 1000;
-    font-family: VAZIR-BOLD;
+    font-family: COLAK;
 }
 
 /* {end} add main title */
@@ -329,7 +336,7 @@ a{
 .contactus .main .header h1{
     font-size: 30px;
     font-weight: 2000;
-    font-family: VAZIR-BOLD;
+    font-family: COLAK;
 }
 
 .contactus .main .text{
@@ -436,7 +443,7 @@ a{
 .aboutus .header h1{
     font-size: 40px;
     font-weight: 2000;
-    font-family: VAZIR-BOLD;
+    font-family: COLAK;
 }
 
 .aboutus .main{
@@ -685,7 +692,7 @@ a{
 .main-title-sumbit-content h1{
     font-size: 40px;
     font-weight:1000;
-    font-family: VAZIR-BOLD;
+    font-family: COLAK;
 }
 
 .discreaption-submit-content{
